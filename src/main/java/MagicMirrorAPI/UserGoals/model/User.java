@@ -16,7 +16,9 @@ public class User {
     @Column(name = "age")
     private Integer age;
 
-    private List<String> goals;
+
+    @OneToMany(mappedBy = "user")
+    private List<Goal> goals;
 
     User(){
 
@@ -46,23 +48,11 @@ public class User {
         this.age = age;
     }
 
-    public List<String> getGoals() {
+    public List<Goal> getGoals() {
         return goals;
     }
 
-    public String getGoalAtIndex(List<Integer> goals) {
-        return goals.toString();
-    }
-
-    public void addToGoals(List<String> goals){
-        this.goals = goals;
-    }
-
-    public String deleteGoalAtIndex(List<Integer> goals){
-        return  goals.toString();
-    }
-
-    public void clearAllGoals(List<String> goals){
+    public void setGoals(List<Goal> goals) {
         this.goals = goals;
     }
 }
