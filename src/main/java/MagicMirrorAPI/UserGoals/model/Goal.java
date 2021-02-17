@@ -10,7 +10,9 @@ public class Goal {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
+
     private String milestone;
+
     @ManyToOne
     @JsonBackReference
     private User user;
