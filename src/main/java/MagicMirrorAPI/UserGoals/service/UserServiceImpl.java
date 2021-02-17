@@ -31,7 +31,7 @@ public class UserServiceImpl  implements UserService{
             userUpdate.setId(user.getId());
             userUpdate.setName(user.getName());
             userUpdate.setAge(user.getAge());
-            userUpdate.addToGoals(user.getGoals());
+            userUpdate.setGoals(user.getGoals());
             userRepository.save(userUpdate);
             return userUpdate;
         } else{
