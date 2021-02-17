@@ -17,7 +17,7 @@ public class WeatherClient {
         WeatherResponse weatherResponse = new WeatherResponse();
 
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://api.openweathermap.org/data/2.5/weather?q=newark&appid=4b79fda432626aed1c209a5462d0fc8f";
+        String url = "";
         ResponseEntity<WeatherResponse> response = restTemplate.getForEntity(url, WeatherResponse.class);
         if(response.getStatusCode() == HttpStatus.OK){
             return response.getBody();
