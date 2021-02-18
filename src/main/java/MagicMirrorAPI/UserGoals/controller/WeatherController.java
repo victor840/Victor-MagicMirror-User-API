@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeatherController {
 
     //Will need help configuring this Weather API controller class
-    //WIll push this to the the weatherAPI branch and pull it back in to the project if
+    // Will push this to the the weatherAPI branch and pull it back in to the project if
     //i find a way to flesh out this class properly
 
     @Autowired

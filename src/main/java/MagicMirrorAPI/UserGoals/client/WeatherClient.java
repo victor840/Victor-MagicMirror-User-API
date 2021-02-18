@@ -11,6 +11,10 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class WeatherClient {
 
+    //removed API Key for github push
+    //keeping the weather aspect of the project on the weatherAPI branch in case i decide to bring
+    //it into the MagicMirror app
+
     private static final Logger logger = LoggerFactory.getLogger(WeatherClient.class);
 
     public WeatherResponse getWeatherResponse(){
