@@ -11,19 +11,10 @@ import org.springframework.web.client.RestTemplate;
 
 
 @SpringBootApplication
-public class UserGoalsApplication implements CommandLineRunner {
+public class UserGoalsApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserGoalsApplication.class, args);
 	}
-	@Autowired
-	private RestTemplate restTemplate;
 
-
-
-	@Override
-	public void run(String... args) throws Exception {
-
-
-	}
 }
