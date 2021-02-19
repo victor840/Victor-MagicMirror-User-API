@@ -1,4 +1,4 @@
-package MagicMirrorAPI.UserGoals.controller;
+package MagicMirrorAPI.UserGoals.controller.exception;
 
 
 
