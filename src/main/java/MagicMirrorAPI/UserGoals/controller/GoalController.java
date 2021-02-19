@@ -22,7 +22,7 @@ public class GoalController {
 
     @GetMapping("/goal/{id}")
     public ResponseEntity<Goal> getGoalById(@PathVariable long id){
-        return ResponseEntity.ok().body(goalService.getGoalBy(id));
+        return ResponseEntity.ok().body(goalService.getGoalById(id));
     }
 
     @PostMapping("/goal")

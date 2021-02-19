@@ -13,8 +13,9 @@ public class Goal {
 
     private String milestone;
 
-    @ManyToOne
     @JsonBackReference
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
     private User user;
 
     public Long getId() {

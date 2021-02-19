@@ -46,7 +46,7 @@ public class GoalServiceImpl implements GoalService {
     }
 
     @Override
-    public Goal getGoalBy(long goalId) {
+    public Goal getGoalById(long goalId) {
         Optional<Goal> goalDb = this.goalRepository.findById(goalId);
 
         if(goalDb.isPresent()){
