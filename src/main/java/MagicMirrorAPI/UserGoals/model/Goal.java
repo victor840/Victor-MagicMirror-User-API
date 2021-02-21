@@ -10,9 +10,12 @@ public class Goal {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
+
     private String milestone;
-    @ManyToOne
+
     @JsonBackReference
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
     private User user;
 
     public Long getId() {

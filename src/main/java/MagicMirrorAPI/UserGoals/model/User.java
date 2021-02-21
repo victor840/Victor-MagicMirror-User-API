@@ -1,6 +1,7 @@
 package MagicMirrorAPI.UserGoals.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,8 +18,8 @@ public class User {
     private Integer age;
 
 
-    @OneToMany(mappedBy = "user")
-    private List<Goal> goals;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Goal> goals = new ArrayList<>();
 
     User(){
 

@@ -1,6 +1,6 @@
 package MagicMirrorAPI.UserGoals.service;
 
-import MagicMirrorAPI.UserGoals.controller.UserNotFoundException;
+import MagicMirrorAPI.UserGoals.controller.exception.UserNotFoundException;
 import MagicMirrorAPI.UserGoals.model.User;
 import MagicMirrorAPI.UserGoals.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
